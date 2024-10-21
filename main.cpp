@@ -33,7 +33,7 @@ void printLocalTime() {
   LCD.println(&timeinfo, "%H:%M:%S");
 
   LCD.setCursor(0, 1);
-  LCD.println(&timeinfo, "%d/%m/%Y   %Z");
+  LCD.println(&timeinfo, "%m/%d/%Y   %Z");
 }
 
 void setup() {
@@ -68,5 +68,5 @@ void setup() {
 
 void loop() {
   printLocalTime();
-  delay(250);
+  delay(2000);
 }
